@@ -2,6 +2,9 @@
 
 ![SampleImage](./example.png)
 
+Startify (top), Standard (lower left), Fennel with rainbow parens
+(lower right)
+
 ## Install
 
 * [packer.nvim](https://github.com/wbthomason/packer.nvim):
@@ -23,5 +26,3 @@ Plug "qfjp/silverscreen.nvim"
 * Colors should be used sparingly
 * Boilerplate should fade into the background (low contrast)
 * Comments & logic should be visible (high contrast)
-* Constants should have some color (know when you're using magic values)
-* The current line should have little to no color (focus on writing)
