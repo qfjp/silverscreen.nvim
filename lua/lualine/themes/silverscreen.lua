@@ -3,6 +3,7 @@
 -- Credit itchyny, jackno (lightline)
 -- stylua: ignore
 local colors = {
+  darkgray   = "#1A1919",
   gray       = '#565454',
   lightgray  = '#868383',
   blue       = '#D8E0ED',
@@ -62,6 +63,6 @@ return {
   inactive = {
     a = { bg = colors.lightgray, fg = colors.gray, gui = 'underlineline' },
     b = { bg = colors.gray, fg = colors.black },
-    c = { bg = colors.lightgray, fg = colors.gray, gui = "italic,underlineline"},
+    c = { bg = colors.lightgray, fg = colors.darkgray, gui = "italic,underlineline"},
   },
 }
