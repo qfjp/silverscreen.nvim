@@ -173,9 +173,9 @@ local theme = lush(function()
         -- {{{ Pmenu
 
         Pmenu { WildMenu },
-        PmenuSbar { bg = colorf2 },
-        PmenuSel { fg = colorf5, bg = colorf2},
-        PmenuThumb { bg = colorf3 },
+        PmenuSbar { bg = Pmenu.bg.darken(step).lighten(step) },
+        PmenuSel { fg = colorf5, bg = PmenuSbar.bg },
+        PmenuThumb { bg = PmenuSbar.bg.darken(step).lighten(step) },
 
         -- }}}
         -- {{{ Spell
