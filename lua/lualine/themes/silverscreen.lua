@@ -61,8 +61,8 @@ return {
     c = { bg = colors.lightgray, fg = colors.white },
   },
   inactive = {
-    a = { bg = colors.lightgray, fg = colors.gray, gui = 'underlineline' },
+    a = { bg = colors.lightgray, fg = colors.gray }, -- gui = 'underlineline' },
     b = { bg = colors.gray, fg = colors.black },
-    c = { bg = colors.lightgray, fg = colors.darkgray, gui = "italic,underlineline"},
+    c = { bg = colors.lightgray, fg = colors.darkgray }, -- gui = "italic,underlineline"},
   },
 }

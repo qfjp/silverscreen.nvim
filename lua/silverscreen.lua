@@ -78,11 +78,11 @@ local theme = lush(function()
         --Comment { fg = colorp3 },
         Comment { fg = white, gui = "bold" },
         --Constant { fg = colorn2 },
-        Constant {fg = white, gui = "italic"},
+        Constant {fg = white }, -- gui = "italic"},
         Directory { Normal },
         EndOfBuffer { fg = colorf4 },
         Identifier { fg = white }, --, gui = "bold" },
-        MatchParen { gui = "bold,underlineline" },
+        --MatchParen { gui = "bold,underlineline" },
         NonText { EndOfBuffer },
         Number { Constant },
         PreProc { fg = colorf3 },
@@ -144,7 +144,7 @@ local theme = lush(function()
         -- }}}
         -- {{{ Search
 
-        IncSearch { bg = colorf4, fg = Normal.fg, gui = "underdot" },
+        IncSearch { bg = colorf4, fg = Normal.fg },--, gui = "underdot" },
         Search { IncSearch, gui = "reverse"},
 
         -- }}}
@@ -180,10 +180,10 @@ local theme = lush(function()
         -- }}}
         -- {{{ Spell
 
-        SpellBad { DiffDelete, gui = "underdash" },
-        SpellCap { gui = "underlineline" },
-        SpellLocal { gui = "underdash" },
-        SpellRare { gui = "underdot" },
+        SpellBad { DiffDelete }, -- gui = "underdash" },
+        --SpellCap { gui = "underlineline" },
+        --SpellLocal { gui = "underdash" },
+        --SpellRare { gui = "underdot" },
 
         -- }}}
         -- {{{ Quickfix
@@ -242,7 +242,7 @@ local theme = lush(function()
         StartifyNumber { Constant },
         StartifyPath { fg = colorf3 },
         StartifySection { Normal },
-        StartifySelect { gui = "italic" },
+        --StartifySelect { gui = "italic" },
         StartifySlash { StartifyPath },
         StartifySpecial { fg = colorf3 },
 
@@ -256,7 +256,7 @@ local theme = lush(function()
         -- {{{ HTML
 
         markdownCode {Constant},
-        htmlItalic {gui="italic"},
+        --htmlItalic {gui="italic"},
         htmlBold {gui="bold"},
         htmlTagName { Identifier },
         htmlTagN {htmlTagName},
