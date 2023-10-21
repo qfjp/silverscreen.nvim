@@ -44,7 +44,7 @@ augroup CmpColors
     autocmd ColorScheme * highlight! CmpItemAbbrMatch      guibg=NONE, guifg=#1A1919
     autocmd ColorScheme * highlight! CmpItemAbbrMatchFuzzy guibg=NONE, guifg=#1A1919
     " Snippet
-    autocmd ColorScheme * vim.cmd[[highlight! CmpItemKindSnippet    guibg=NONE
+    autocmd ColorScheme * highlight! CmpItemKindSnippet    guibg=NONE
     " LSP things
     autocmd ColorScheme * highlight! CmpItemKindVariable   guibg=NONE gui=bold
     autocmd ColorScheme * highlight! CmpItemKindInterface  guibg=NONE gui=bold
