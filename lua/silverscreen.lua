@@ -71,18 +71,18 @@ vim.g.darkest = colorf5.darken(step * 2).hex
 ---@diagnostic disable: undefined-global
 local theme = lush(function()
     return {
-        Normal {fg = colorf1, bg = colorf5},
+        Normal { fg = colorf1, bg = colorf5 },
 
         -- {{{ Misc
 
         --Comment { fg = colorp3 },
         Comment { fg = white, gui = "bold" },
         --Constant { fg = colorn2 },
-        Constant {fg = white }, -- gui = "italic"},
+        Constant { fg = white, gui = "italic" },
         Directory { Normal },
         EndOfBuffer { fg = colorf4 },
         Identifier { fg = white }, --, gui = "bold" },
-        --MatchParen { gui = "bold,underlineline" },
+        MatchParen { gui = "bold,underdouble" },
         NonText { EndOfBuffer },
         Number { Constant },
         PreProc { fg = colorf3 },
@@ -144,8 +144,8 @@ local theme = lush(function()
         -- }}}
         -- {{{ Search
 
-        IncSearch { bg = colorf4, fg = Normal.fg },--, gui = "underdot" },
-        Search { IncSearch, gui = "reverse"},
+        IncSearch { bg = colorf4, fg = Normal.fg, gui = "underdotted" },
+        Search { IncSearch, gui = "reverse" },
 
         -- }}}
         -- {{{ Messages
@@ -180,10 +180,10 @@ local theme = lush(function()
         -- }}}
         -- {{{ Spell
 
-        SpellBad { DiffDelete }, -- gui = "underdash" },
-        --SpellCap { gui = "underlineline" },
-        --SpellLocal { gui = "underdash" },
-        --SpellRare { gui = "underdot" },
+        SpellBad { DiffDelete, gui = "underdashed" },
+        SpellCap { gui = "underdouble" },
+        SpellLocal { gui = "underdashed" },
+        SpellRare { gui = "underdotted" },
 
         -- }}}
         -- {{{ Quickfix
@@ -208,9 +208,9 @@ local theme = lush(function()
 
         LightspeedLabel { gui = "none" },
         LightspeedLabelDistant { gui = "bold" },
-        LightspeedMaskedChar {fg = colorf3},
+        LightspeedMaskedChar { fg = colorf3 },
         LightspeedUnlabeledMatch {},
-        LightspeedGreyWash {fg = colorf4},
+        LightspeedGreyWash { fg = colorf4 },
 
         -- }}}
         -- {{{ Plugin: vim-signify
@@ -255,11 +255,11 @@ local theme = lush(function()
         -- }}}
         -- {{{ HTML
 
-        markdownCode {Constant},
-        --htmlItalic {gui="italic"},
-        htmlBold {gui="bold"},
+        markdownCode { Constant },
+        htmlItalic { gui = "italic" },
+        htmlBold { gui = "bold" },
         htmlTagName { Identifier },
-        htmlTagN {htmlTagName},
+        htmlTagN { htmlTagName },
 
         -- }}}
         -- {{{ Plugin: cmp
