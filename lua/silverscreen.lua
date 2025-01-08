@@ -166,7 +166,7 @@ local theme = lush(function()
         -- }}}
         -- {{{ Visual
 
-        Visual { bg = colorf4.darken(step) },
+        Visual { bg = colorf3.darken(step) },
         VisualNOS { Visual },
 
         -- }}}
