@@ -20,11 +20,11 @@ local colorp1 = colorp2.lighten(step)
 -- flat
 
 local mynitive = mynitive_base
+local colorf1 = hsl("#F8F8F8")
+local colorf2 = colorf1.darken(step)
+local colorf3 = colorf2.darken(step)
+local colorf4 = colorf3.darken(step)
 local colorf5 = mynitive
-local colorf4 = colorf5.lighten(step)
-local colorf3 = colorf4.lighten(step)
-local colorf2 = colorf3.lighten(step)
-local colorf1 = colorf2.lighten(step)
 local white = colorf1.lighten(step * 2)
 
 -- negative
@@ -266,6 +266,11 @@ local theme = lush(function()
         -- {{{ Plugin: cmp
 
         CmpItemKindDefault { Pmenu },
+
+        -- }}}
+        -- {{{ Plugin: notify
+
+           NotifyBackground { fg = "#484933" }
 
         -- }}}
     }
