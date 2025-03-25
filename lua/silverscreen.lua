@@ -100,7 +100,7 @@ local theme = lush(function()
         -- }}}
         -- {{{ Cursor lines
 
-        CursorColumn { bg = colorf4.darken(step * 2) },
+        CursorColumn { bg = colorf5.lighten(step * 0.1) },
         CursorLine { CursorColumn },
 
         -- }}}
