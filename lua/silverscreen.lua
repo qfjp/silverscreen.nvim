@@ -5,7 +5,7 @@ local hsl = lush.hsluv
 
 local negative_base = hsl("#633251")
 local positive_base = hsl("#72855e")
-local mynitive_base = hsl("#272822")
+local mynitive_base = hsl("#F8F8F8")
 
 local step = 30
 
@@ -20,11 +20,11 @@ local colorp1 = colorp2.lighten(step)
 -- flat
 
 local mynitive = mynitive_base
-local colorf1 = hsl("#F8F8F8")
+local colorf1 = mynitive
 local colorf2 = colorf1.darken(step)
 local colorf3 = colorf2.darken(step)
 local colorf4 = colorf3.darken(step)
-local colorf5 = mynitive
+local colorf5 = colorf4.darken(step)
 local white = colorf1.lighten(step * 2)
 
 -- negative
