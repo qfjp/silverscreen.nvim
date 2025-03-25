@@ -5,7 +5,7 @@ local hsl = lush.hsluv
 
 local negative_base = hsl("#633251")
 local positive_base = hsl("#72855e")
-local mynitive_base = hsl("#363535")
+local mynitive_base = hsl("#272822")
 
 local step = 30
 
@@ -19,7 +19,7 @@ local colorp1 = colorp2.lighten(step)
 
 -- flat
 
-local mynitive = mynitive_base.darken(2 * step)
+local mynitive = mynitive_base
 local colorf5 = mynitive
 local colorf4 = colorf5.lighten(step)
 local colorf3 = colorf4.lighten(step)
@@ -120,7 +120,7 @@ local theme = lush(function()
         -- {{{ Number column
 
         CursorLineNr { fg = Normal.fg, bg = Normal.bg.lighten(step) },
-        LineNr { fg = Normal.fg, bg = Normal.bg.darken(step * 2) },
+        LineNr { fg = Normal.fg, bg = Normal.bg },
 
         -- }}}
         -- {{{ Color column
