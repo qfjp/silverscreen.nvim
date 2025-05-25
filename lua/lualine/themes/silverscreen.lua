@@ -60,6 +60,11 @@ return {
     b = { bg = colors.gray, fg = colors.white },
     c = { bg = colors.lightgray, fg = colors.white },
   },
+  active = {
+    a = { bg = colors.white, fg = colors.black, gui = 'underdouble' },
+    b = { bg = colors.gray, fg = colors.black },
+    c = { bg = colors.lightgray, fg = colors.darkgray, gui = "italic,underdouble"},
+  },
   inactive = {
     a = { bg = colors.lightgray, fg = colors.gray, gui = 'underdouble' },
     b = { bg = colors.gray, fg = colors.black },
