@@ -70,3 +70,8 @@ augroup CmpColors
     autocmd ColorScheme * highlight! CmpItemKindProperty   guibg=NONE gui=bold
     autocmd ColorScheme * highlight! CmpItemKindUnit       guibg=NONE gui=bold
 augroup END
+
+augroup NoicePopupFix
+    autocmd ColorScheme * highlight! link NoiceCompletionItemKindDefault Pmenu
+    autocmd ColorScheme * highlight! link NoicePopupmenuMatch            Pmenu
+augroup END
